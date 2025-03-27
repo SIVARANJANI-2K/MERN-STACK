@@ -1,0 +1,92 @@
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('./4477349.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1; /* Push to background */
+}
+.quote-text{
+    color:#ffff;
+
+    top:35%;
+    bottom:auto;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+
+
+}
+.quote-text{
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay */
+    padding: 10px;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+}
+
+.navbar{
+    position:absolute;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent for readability */
+
+}
+.logo{
+    border-radius: 30%;
+}
+.navbar-toggler-icon {
+    filter: invert(1); /* Inverts black to white */
+}
+.btn{
+    background: brown;
+    border-radius: 20px;
+    padding: 6px 12px;
+}
+.center{
+    text-align: center;
+    color:#ffff;
+}
+.carousel {
+    max-width: 90%;
+    margin: auto;
+}
+.carousel img{
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.review-class{
+    background-image: url('./background-review.jpg'); /* Replace with your actual image path */
+    background-size: cover;  /* Ensure the image covers the whole section */
+    /* Center the image */
+    background-attachment: fixed; /* Optional: Creates a parallax effect */
+    color: white; /* Adjust text color for visibility */
+    padding: 30px 0; /* Add some spacing */
+    text-align: center;
+    margin-left:0;
+    margin-right: 0;
+    width:100%;
+    margin-top:20px;
+    background-repeat:no-repeat;
+    height:max-content;
+}
+
+@media (max-width: 768px) {
+    .quote-text {
+        font-size: 30px;
+    }
+    .carousel {
+        max-width: 100%;
+    }
+}
+.review-class .card {
+    max-width: 300px;
+    max-height:300px; /* Adjust as needed */
+    margin: auto; /* Centers the cards */
+}
+
+
